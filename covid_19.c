@@ -1,4 +1,4 @@
-#include<mylib.h>
+#include<stdio.h>
 int main(){
 void coco();
 void stats();
@@ -28,7 +28,7 @@ void handle();
 	    printf("Option 5 page need to be created\n");
 	    coco();
 	}
-	else if (a==6) 
+	else if (a==6)
 	{
 	  nearby();
 	}
@@ -43,13 +43,12 @@ else {
 		printf("\n\nPlease select from given options only\n\n");
 		handle();
 }
-	
+
 printf("\n\n\t\t\t\t\tDeveloped by ~Ambuj Singh\n\n");
-	getch();
 return 0;
 }
 void coco()
-{ 
+{
 char yno;
 	printf("\n\tDo you want any further info? \n\t Write 'y' for 'yes' and 'n' for 'no':- ");
 	scanf("%s",&yno);
@@ -81,13 +80,13 @@ void stats()
 	        }
 }
 void nearby()
-{  
-    void delhi(); 
+{
+    void delhi();
     char b;
 		printf("\nCurrently we have onle New Delhi's doctors list :P \n Do you want to proceed? type 'y' if yes or type 'n' if no :");
 		scanf(" %s", &b);
 		if(b=='y') {
-		    delhi();				
+		    delhi();
 	}
 		else if (b=='n') {
 			printf(" \n\n Thank you! \n Stay Safe :) \n");
@@ -109,16 +108,16 @@ void delhi()
 				printf("Please enter your PINCODE to get nearest doctor around you : ");
 				scanf("%d",&v);
 				if (v == 112233) {
-					printf(" \n\n\nDr. Ambuj Singh \nPhone NO : 7400239627 \nAddress : Dwarka,New Delhi,Delhi, India \nVisit Time : 09:00AM - 06:00PM \n\n");
+					printf(" \n\n\nDr. XYZ Singh \nPhone NO : 9XXXXXXXX7 \nAddress : XYZ Colony,New Delhi,Delhi, India \nVisit Time : 09:00AM - 06:00PM \n\n");
 	                another();
 				}
 				else if ( v == 223344) {
-					printf(" \nDr. Anjali Sharan \nPhone NO : 7361763823 \nAddress : Bharat Vihar,New Delhi,Delhi, India \nVisit Time : 07:00AM - 06:00PM ");
+					printf(" \nDr. XYZ Singh \nPhone NO : 8XXXXXXXX3 \nAddress : XYZ Colony,New Delhi,Delhi, India \nVisit Time : 07:00AM - 06:00PM ");
 				    another();
 				}
 				else{
 					printf("Check your PINCODE");
-				}	
+				}
             }
             else {
             	printf("\n\n\tChoose right options!\n");
